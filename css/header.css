@@ -1,0 +1,197 @@
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    max-height: 66px;
+    
+    min-width: 100vw;
+    position: fixed;
+    z-index: 1;
+    padding: 1.5rem;
+    background-color: var(--secondary-color-light);
+    text-shadow: 1px 1px 2px 3px var(--accent-color-dark);
+    
+    & h1 {
+        /* Dold h1 */
+        position: absolute;
+        visibility: hidden;
+    }
+    
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--accent-color-light);
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+    /* Logo h1 - endast i index.html */
+    
+}
+
+
+
+/* HAMBURGER ICON */
+
+.hamb {
+    display: flex;
+    color: var(--accent-color-light);
+    font-size: 2rem;
+
+}
+
+/* Döljer hamburgarikonen när checkboxen är markerad */
+.side-nav:checked+.hamb .hamb-icon {
+    display: none
+}
+
+/* Döljer stäng-ikon när checkboxen inte är markerad */
+.side-nav:not(:checked)+.hamb .close-icon {
+    display: none;
+}
+
+/* Döljer checkbox - då endast label ska synas*/
+.side-nav {
+    display: none;
+}
+
+
+
+
+
+
+
+/* NAVIGATION BAR */
+
+/* Stil för navigationspanelen (dold på mobila enheter) */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 200vh;
+    width: 100vw;
+    left: 100%;
+    top: 66px;
+    background-color: rgb(46, 46, 46, 0.9);
+    transition: 200ms;
+    
+}
+
+/* Stil för navigationslänkar på mobila enheter */
+.nav-list {
+    
+    background-color: var(--secondary-color-light);
+    list-style: none;
+    border-bottom: 5px solid var(--secondary-color-dark);
+    
+}
+
+
+.nav-link {
+    display: block;  
+
+    text-decoration: none;
+    color: var(--accent-color-dark);
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    border-top: 0.5px dotted var(--secondary-color-dark);
+    border-left: 5px solid var(--secondary-color-dark);
+    padding: 0.5rem;
+    
+}
+
+.nav-link:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+.active-page .nav-link{
+    color: var(--accent-color-light);
+    text-decoration: underline;
+    
+}
+
+/* Visa navigationspanelen när input är markerad på mobila enheter */
+.side-nav:checked+.hamb+.navbar
+ {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+     
+}
+
+
+@media (min-width: 800px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        max-height: unset;
+        
+        min-width: 100vw;
+        position: relative;
+        z-index: 1;
+        padding: 1.5rem 4rem;
+        background-color: var(--secondary-color-light);
+        
+        
+    }
+
+    .hamb {
+        display: none;
+    }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        position: unset;
+        height: unset;
+        width: unset;
+        left: unset;
+        top: unset;
+        background-color: unset;
+        transition: unset;
+        
+    }
+    .nav-list {
+        display: flex;
+        gap: 2rem;
+
+        border: none;
+        background-color: unset;
+        list-style: none;
+        border-bottom: unset;
+        
+    }
+    
+    .nav-link {  
+    
+        position: relative;
+        color: var(--accent-color-dark);
+        font-size: 20px;
+        letter-spacing: 0.1rem;
+        border-top: unset;
+        border-left: unset;
+        padding: 0.5rem;
+        transition: 300ms;
+        
+
+        &:hover {
+            background-color: unset;
+            color: var(--accent-color-light);
+            transform: scale(1.2);
+            
+        }
+
+    }
+    
+    .active-page .nav-link{
+        color: var(--accent-color-light);
+        transform: scale(1.2);
+        text-decoration: none;
+    }
+    
+}

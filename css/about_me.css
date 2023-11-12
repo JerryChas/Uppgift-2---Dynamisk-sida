@@ -1,0 +1,16 @@
+@media (min-width: 800px) {
+    
+
+    
+
+    .main-section {
+        padding: 0; /* återställer efter header har fått position: relative  */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+
+
+}

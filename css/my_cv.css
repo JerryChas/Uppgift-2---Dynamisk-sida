@@ -1,0 +1,34 @@
+
+
+.cv-content ul {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    padding-bottom: 0.5rem;
+    
+}
+
+.cv-content li{
+
+    margin: 0 0.9rem;
+}
+
+@media (min-width: 800px) {
+    
+
+    .main-section {
+        padding: 0; /* återställer efter header har fått position: relative  */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .cv-content ul {
+        margin: 2rem;
+        color: var(--secondary-color-light);
+        font-size: 1.3rem;
+    }
+}

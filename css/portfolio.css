@@ -1,0 +1,32 @@
+.card p {
+    
+    width: fit-content;
+}
+.card:hover {
+    & h3 {
+        display: none;
+    }
+}
+
+
+@media (min-width: 800px) {
+    
+
+    .main-section {
+        padding: 0; /* återställer efter header har fått position: relative  */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 100vh;
+        
+    }
+
+}
