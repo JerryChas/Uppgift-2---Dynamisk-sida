@@ -1,1 +1,7 @@
-console.log('Hello world')
+
+async function getCV() {
+    console.log('inside getCV')
+}
+
+getCV()
+
