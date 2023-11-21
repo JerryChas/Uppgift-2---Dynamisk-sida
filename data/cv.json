@@ -1,24 +1,11 @@
 {
-    "personalInformation": { 
+    "personalInformation": [
+    { 
       "name": "Jerry Olsson",
       "adress": "Ängsholmen 7, 94335 Öjebyn",
       "telephone": "0702538577",
       "email": "jerry.ohlson@gmail.com"
-    },
-    "skills": [
-      "Ambitiös",
-      "Ansvarsfull",
-      "Arbetsam",
-      "Kreativ",
-      "Logisk",
-      "Lösningsorienterad",
-      "Noggrann",
-      "Positiv",
-      "Samarbetsvillig",
-      "Självständig",
-      "Strukturerad",
-      "Teknisk",
-      "Vetgirig"
+    }
     ],
     "experience": [
       {
