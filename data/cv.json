@@ -1,12 +1,4 @@
 {
-  "personalInformation": [
-    {
-      "name": "Jerry Olsson",
-      "adress": "Ängsholmen 7, 94335 Öjebyn",
-      "telephone": "0702538577",
-      "email": "jerry.ohlson@gmail.com"
-    }
-  ],
   "experience": [
     {
       "title": "Depåarbetare",
@@ -57,12 +49,6 @@
       "period": "Mars 2015 - Maj 2019",
       "organisation": "Caring from childhood to youth",
       "description": "Jag har sedan Mars- 15 pendlat mellan Sverige och Tanzania tillsammans med min familj där vi jobbat under organisationen Caring from childhood to youth, CCY. De första två åren var jag föräldraledig i Tanzania, men hjälpte till med såväl praktiska saker som måleri och mindre byggnationer samt installationer av solceller, lärde mig språket Swahili, samt att jobba med människor från en helt ny kultur, men jobbade som målare då vi var i Sverige. Sedan januari-17 har jag sedan jobbat med olika arbetsuppgifter på skolan och det barnhem som CCY driver på landsbygden i Tanzania. Jag har haft varierande arbetsuppgifter såsom arbetsledning av byggen, verkare, övervakning och instruktion av skorstensmurare, bygge och lagning av mindre träbyggnationer. Installation av solcellssystem samt underhåll och lagning av mindre elektronik som till exempel laptops, projektor, mobiltelefoner, radio m.m."
-    },
-    {
-      "activity": "Familjehem",
-      "period": "2017",
-      "location": "Piteå kommun",
-      "description": "Under året 2017 var jag och min fru familjehem åt min lillebror som vid tillfället var 14 år. Detta gav mig en enorm erfarenhet av ansvarstagande samt en ny förståelse för olika människors livssituationer samt eventuella funktionsvariationer."
     },
     {
       "activity": "Språkkunskaper",
