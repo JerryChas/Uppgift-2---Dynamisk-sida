@@ -26,6 +26,7 @@ async function getCV() {
         //Hämtar container som ska fyllas med kommande information
         const experienceDiv = document.querySelector('.experience_div')
         const educationDiv = document.querySelector('.education_div')
+        const additionalMeritsDiv = document.querySelector('.additionalMerits_div')
         
         jsonData.experience.forEach(function(obj){
         //skapar element 
@@ -46,6 +47,14 @@ async function getCV() {
             createAndAppendElement(educationDiv, 'p', obj.period, 'education-period')
             createAndAppendElement(educationDiv, 'p', obj.description, 'education-description')
             
+        })
+        jsonData.additionalMerits.forEach(function(obj){
+            //skapar element 
+            createAndAppendElement(additionalMeritsDiv, 'h3', obj.activity, 'additionalMerits-activity')
+            createAndAppendElement(additionalMeritsDiv, 'h4', obj.location, 'additionalMerits-location')
+            createAndAppendElement(additionalMeritsDiv, 'h5', obj.period, 'additionalMerits-period')
+            createAndAppendElement(additionalMeritsDiv, 'p', obj.description, 'additionalMerits-description')
+            createAndAppendElement(additionalMeritsDiv, 'p', obj.language, 'additionalMerits-language')
         })
             
         
