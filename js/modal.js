@@ -2,6 +2,7 @@
 
 var modal = document.querySelector(".modal");
 var closeButton = document.querySelector(".close-button");
+//ändrar så att trigger är självaste korten i portfolion
 var trigger = document.querySelector(".card");
 
 function toggleModal() {
