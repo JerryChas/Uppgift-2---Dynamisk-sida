@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/modal.css">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,34 +53,47 @@
   <main class="main-section">
     <section class="page-content">
       <h1>Portfolio</h1>
+
+      <!-- MODAL ---källa: https://codepen.io/codejockie/pen/NBwjyd  -->
+      <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <!-- ändrar från h1 till h3 -->
+            <h3 class="modal-headline">Projektnamn!</h3>
+            <!-- lägger till en p-tagg som ska innehålla projektbeskrivning -->
+            <p class="modal-text-info">Här beskrivs projektet</p>
+        </div>
+     </div>
+
+
       <!-- Project cards -->
       <div class="card-container">
 
         <!-- Cards -->
-        <a target="_blank" href="https://jerool.github.io/Button_rotating_border/">
+        <!-- <a target="_blank" href="https://jerool.github.io/Button_rotating_border/"> -->
           <div class="card card-1">
-            <h3>Rotating border</h3>
+            <h3 class="card-headline">Rotating border</h3>
             <p class="card-text-info">Roterande ytterkant som kan användas till exempelvis knapp eller kort</p>
           </div>
-        </a>
-        <a target="_blank" href="https://jerool.github.io/before-after_juggling-ball/">
+        <!-- </a> -->
+        <!-- <a target="_blank" href="https://jerool.github.io/before-after_juggling-ball/"> -->
           <div class="card card-2">
-            <h3>Triangle shape</h3>
+            <h3 class="card-headline">Triangle shape</h3>
             <p class="card-text-info">Exprimenterat med psuedoelementen ::before och ::after</p>
           </div>
-        </a>
-        <a href="#">
+        <!-- </a> -->
+        <!-- <a href="#"> -->
           <div class="card card-3">
-            <h3>Tomt</h3>
+            <h3 class="card-headline">Tomt</h3>
             <p class="card-text-info">Ingen information för tillfället</p>
           </div>
-        </a>
-        <a href="#">
+        <!-- </a> -->
+        <!-- <a href="#"> -->
           <div class="card card-4">
-            <h3>Tomt</h3>
+            <h3 class="card-headline">Tomt</h3>
             <p class="card-text-info">Ingen information för tillfället</p>
           </div>
-        </a>
+        <!-- </a> -->
       
       </div>
     </section>
@@ -110,7 +124,7 @@
   </footer>
 
 
-
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
