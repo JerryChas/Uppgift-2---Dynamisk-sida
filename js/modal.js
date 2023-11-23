@@ -1,9 +1,10 @@
 //KÄLLA: https://codepen.io/codejockie/pen/NBwjyd
 
-var modal = document.querySelector(".modal");
-var closeButton = document.querySelector(".close-button");
+//ändrar variablerna till const istället för var
+const modal = document.querySelector(".modal");
+const closeButton = document.querySelector(".close-button");
 //ändrar så att trigger är självaste korten i portfolion
-var trigger = document.querySelector(".card");
+const trigger = document.querySelector(".card");
 
 function toggleModal() {
     modal.classList.toggle("show-modal");
