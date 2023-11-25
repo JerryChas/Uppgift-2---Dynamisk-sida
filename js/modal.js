@@ -1,30 +1,36 @@
 //KÄLLA: https://codepen.io/codejockie/pen/NBwjyd
+console.log('modal.js');
 
-//Hämtar element
-const modalHeadline = document.querySelector('.modal-headline')
-const modalTextInfo = document.querySelector('.modal-text-info')
+// Hämtar element
+const modalHeadline = document.querySelector('.modal-headline');
+const modalTextInfo = document.querySelector('.modal-text-info');
 
-//ändrar variablerna till const istället för var
+// ändrar variablerna till const istället för var
 const modal = document.querySelector(".modal");
 const closeButton = document.querySelector(".close-button");
 
-//ändrar så att trigger är självaste korten i portfolion
-const triggers = document.querySelectorAll(".card");
+// ändrar så att trigger är självaste korten i portfolion
+const cardContainer = document.querySelector('.card-container');
 
-// Loopar igenom varje trigger (kort) och lägger till en click-event lyssnare
-triggers.forEach(function(trigger) {
-    trigger.addEventListener("click", function(){
-        //Hämtar element för det specifika klickade kortet
-        const cardHeadline = trigger.querySelector('.card-headline')
-        const cardTextInfo = trigger.querySelector('.card-text-info')
-        
+// Lägger till en click-event lyssnare på cardContainer
+// - Eftersom klassen 'card' skapas dynamiskt i githubRepo.js så skapar jag eventlyssnare på cardContainer som finns statiskt i html-koden...
+cardContainer.addEventListener("click", function(event) {
+    // ...hittar sedan det närmaste elementet med klassen "card" till det element som klickades på
+    const clickedCard = event.target.closest('.card');
+    
+    //om det är ett kort som klickades på så:
+    if (clickedCard) {
+        // Hämtar element för det specifika klickade kortet
+        const cardHeadline = clickedCard.querySelector('.card-headline');
+        const cardTextInfo = clickedCard.querySelector('.card-text-info');
+
         // Byter innehåll i modalen med innehållet från det klickade kortet
         modalHeadline.textContent = `${cardHeadline.textContent}`;
         modalTextInfo.textContent = `${cardTextInfo.textContent}`;
 
         // Visar eller döljer modalen
-        toggleModal()
-    });
+        toggleModal();
+    }
 });
 
 function toggleModal() {
