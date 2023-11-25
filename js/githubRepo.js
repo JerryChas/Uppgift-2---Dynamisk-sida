@@ -1,5 +1,5 @@
-//hämta element
-const cardContainer = document.querySelector('.card-container');
+//hämta element (hämtas redan i modal.js)
+// const cardContainer = document.querySelector('.card-container');
 
 //Hämtar JSON
 async function getRepos() {
