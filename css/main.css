@@ -202,12 +202,12 @@ body {
 }
 
 .card a {
-    
-    text-decoration: none;
+    display: none;
+    /* text-decoration: none;
     border: 1px solid black;
     border-radius: 15px;
     padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; */
 }
 
 .card-1 {
