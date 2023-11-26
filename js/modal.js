@@ -4,6 +4,7 @@ console.log('modal.js');
 // Hämtar element
 const modalHeadline = document.querySelector('.modal-headline');
 const modalTextInfo = document.querySelector('.modal-text-info');
+const modalLinkContainer = document.querySelector('.modal-link_container')
 
 // ändrar variablerna till const istället för var
 const modal = document.querySelector(".modal");
