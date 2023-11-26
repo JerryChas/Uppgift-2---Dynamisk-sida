@@ -40,7 +40,7 @@
   transform: scale(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-.modal-links_div {
+.modal-link_container {
   display: flex;
   justify-content: space-around;
   margin: 1em 0;
@@ -50,7 +50,7 @@
   color: inherit;
 }
 
-.modal-links_btn {
+.modal_link {
   display: block;
   box-shadow: 2px 2px 10px black;
   border-radius: 20px;
