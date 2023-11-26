@@ -38,6 +38,7 @@ async function getRepos() {
         //lägger till länk till repo
         const CardRepoLink = document.createElement('a');
         CardRepoLink.href = obj.html_url
+        CardRepoLink.classList.add('card-repo_link')
         CardRepoLink.textContent = '';
         card.appendChild(CardRepoLink);
         console.log(CardRepoLink.href)
@@ -45,6 +46,7 @@ async function getRepos() {
         //lägger till länk till webbsidan
         const CardPageLink = document.createElement('a');
         CardPageLink.href = obj.homepage
+        CardPageLink.classList.add('card-page_link')
         CardPageLink.textContent = '';
         card.appendChild(CardPageLink);
         console.log(CardPageLink.href)
