@@ -33,11 +33,26 @@ async function getRepos() {
         cardTextInfo.textContent = obj.description;
         card.appendChild(cardTextInfo);
 
+
         
-        console.log(obj.name)
-        console.log(obj.description)
-        console.log(obj.homepage)
-        console.log(obj.html_url)
+        //lägger till länk till repo
+        const CardRepoLink = document.createElement('a');
+        CardRepoLink.href = obj.html_url
+        CardRepoLink.textContent = '';
+        card.appendChild(CardRepoLink);
+        console.log(CardRepoLink.href)
+
+        //lägger till länk till webbsidan
+        const CardPageLink = document.createElement('a');
+        CardPageLink.href = obj.homepage
+        CardPageLink.textContent = '';
+        card.appendChild(CardPageLink);
+        console.log(CardPageLink.href)
+        
+        // console.log(obj.name)
+        // console.log(obj.description)
+        // console.log(obj.homepage)
+        // console.log(obj.html_url)
       }
     });
   } else {
