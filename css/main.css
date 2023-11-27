@@ -35,6 +35,21 @@ body {
     justify-content: space-between;
     line-height: 1.5;
     /* height: 100%; */
+
+}
+.dark-mode {
+    /* 60%  */
+    --primary-color-light: #071a40;
+    --primary-color-dark: rgb(79, 57, 18);
+    
+    /* 30%  */
+    --secondary-color-light: #0b1524;
+    --secondary-color-dark: rgb(7, 11, 25);
+
+    /* 10%  */
+    --accent-color-light: #72eadc;
+    --accent-color-dark: #54c1b7;
+
 }
 
 /* MAIN */
