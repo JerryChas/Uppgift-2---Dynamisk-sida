@@ -13,42 +13,51 @@ a {
 
 :root {
     /* 60%  */
-    --primary-color-light: #c5c6c8;
-    --primary-color-dark: rgb(133, 126, 113);
+    --primary-color-light: rgb(180, 180, 180);
+    --primary-color-dark: rgb(178, 166, 141);
     
     /* 30%  */
-    --secondary-color-light: #202833;
-    --secondary-color-dark: rgb(28, 31, 41);
+    --secondary-color-light: rgb(203, 167, 115);
+    --secondary-color-dark: rgb(205, 161, 101);
 
     /* 10%  */
-    --accent-color-light: #edf5f4;
-    --accent-color-dark: #bdc9c8;
+    --accent-color-light: rgb(124, 199, 239);
+    --accent-color-dark: rgb(98, 189, 239);
+
+    --font-color: #111010;
+
+    
     
 }
 
 
 body {
+    height: 100vh;
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     line-height: 1.5;
-    /* height: 100%; */
+    color: var(--font-color);
+
+    
 
 }
 .dark-mode {
     /* 60%  */
-    --primary-color-light: #071a40;
-    --primary-color-dark: rgb(79, 57, 18);
+    --primary-color-light: #000000;
+    --primary-color-dark: rgb(25, 46, 46);
     
     /* 30%  */
     --secondary-color-light: #0b1524;
-    --secondary-color-dark: rgb(7, 11, 25);
+    --secondary-color-dark: rgb(0, 0, 0);
 
     /* 10%  */
     --accent-color-light: #72eadc;
     --accent-color-dark: #54c1b7;
+
+    --font-color: #ffffff;
 
 }
 
@@ -136,8 +145,8 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     background-color: var(--secondary-color-dark);
-    color: var(--accent-color-light);
-    border: 1px solid var(--accent-color-light);
+    color: var(--font-color);
+    border: 1px solid var(--accent-color-dark);
     border-radius: 10px 30px;
     margin-top: 0.5rem;
 }
@@ -178,11 +187,11 @@ body {
     
     overflow: hidden;
     
-    color: var(--accent-color-dark);
+    color: #fff;
     
     
     border-radius: 5px;
-    background-color: var(--secondary-color-light);
+    background-color: var(--secondary-color-dark);
     background-size: cover;
     
     
@@ -194,12 +203,12 @@ body {
     }
     & h3 {
         text-align: center;
-        text-shadow: 1px 1px 10px#000000;
+        text-shadow: 1px 1px 3px black;
     }
     
 }
 .card:hover {
-    box-shadow: 3px 3px 5px 1px var(--secondary-color-dark);
+    box-shadow: 3px 3px 5px 1px rgb(138, 138, 138);
     transform: scale(1.05);
     justify-content: space-around;
     background-blend-mode: darken;
@@ -317,7 +326,7 @@ body {
         transition: 300ms;
 
         &:hover {
-            box-shadow: 0 0 10px 2px var(--accent-color-light);
+            box-shadow: 0 0 10px 2px var(--accent-color-dark);
             /* border-color: var(--secondary-color-dark); */
             color: #fff;
             transform: scale(1.1);
