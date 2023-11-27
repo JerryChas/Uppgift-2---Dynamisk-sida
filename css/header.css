@@ -24,7 +24,7 @@ header {
 .logo {
     text-decoration: none;
     font-size: 2.5rem;
-    color: var(--accent-color-light);
+    color: var(--font-color);
     
     font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
     /* Logo h1 - endast i index.html */
@@ -32,9 +32,15 @@ header {
 }
 
 /* DARK MODE SWITCH */
-.dark-mode-switch {
+/* .dark-mode-switch {
     
-}
+    position: relative;
+    &::before {
+        
+        content: '☀️';
+        
+    }
+} */
 .dark-mode-switch input {
     display: none;
 }
@@ -64,7 +70,7 @@ header {
 
 .hamb {
     display: flex;
-    color: var(--accent-color-light);
+    color: var(--font-color);
     font-size: 2rem;
 
 }
@@ -120,7 +126,7 @@ header {
     display: block;  
 
     text-decoration: none;
-    color: var(--accent-color-dark);
+    color: var(--font-color);
     font-size: 20px;
     letter-spacing: 0.1rem;
     border-top: 0.5px dotted var(--secondary-color-dark);
@@ -134,7 +140,7 @@ header {
 }
 
 .active-page .nav-link{
-    color: var(--accent-color-light);
+    color: var(--font-color);
     text-decoration: underline;
     
 }
@@ -197,7 +203,7 @@ header {
     .nav-link {  
     
         position: relative;
-        color: var(--accent-color-dark);
+        color: var(--font-color);
         font-size: 20px;
         letter-spacing: 0.1rem;
         border-top: unset;
@@ -208,7 +214,7 @@ header {
 
         &:hover {
             background-color: unset;
-            color: var(--accent-color-light);
+            color: var(--font-color);
             transform: scale(1.2);
             
         }
@@ -216,7 +222,7 @@ header {
     }
     
     .active-page .nav-link{
-        color: var(--accent-color-light);
+        color: var(--font-color);
         transform: scale(1.2);
         text-decoration: none;
     }
