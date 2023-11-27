@@ -36,7 +36,7 @@ header {
     
 }
 .dark-mode-switch input {
-    visibility: hidden;
+    display: none;
 }
 .slider {
     display: flex;
