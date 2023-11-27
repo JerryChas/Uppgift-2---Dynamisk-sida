@@ -31,6 +31,33 @@ header {
     
 }
 
+/* DARK MODE SWITCH */
+.dark-mode-switch {
+    
+}
+.dark-mode-switch input {
+    visibility: hidden;
+}
+.slider {
+    display: flex;
+    
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: aliceblue;
+    width: 2em;
+    height: 1em;
+}
+.slider-dot {
+    margin: auto 1px;
+    width: 50%;
+    height: 90%;
+    background-color: black;
+    border-radius: 50%;
+}
+#dark-mode-toggle:checked + .slider {
+    justify-content: end;
+}
+
 
 
 /* HAMBURGER ICON */
