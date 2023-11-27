@@ -11,7 +11,7 @@ async function getRepos() {
   if (repoResponse.ok) {
     const jsonData = await repoResponse.json();
     console.log(jsonData);
-
+    
     //loopar datan från json
     jsonData.forEach(function (obj) {
       //* GENERERAR KORT
@@ -20,7 +20,7 @@ async function getRepos() {
         const card = document.createElement('div');
         card.classList.add('card');
         cardContainer.appendChild(card);
-
+        
         //Lägger till en rubrik i kortet
         const cardHeadline = document.createElement('h3');
         cardHeadline.classList.add('card-headline');
@@ -32,24 +32,28 @@ async function getRepos() {
         cardTextInfo.classList.add('card-text-info');
         cardTextInfo.textContent = obj.description;
         card.appendChild(cardTextInfo);
-
-
         
         //lägger till länk till repo
         const CardRepoLink = document.createElement('a');
         CardRepoLink.href = obj.html_url
         CardRepoLink.classList.add('card-repo_link')
-        CardRepoLink.textContent = '';
         card.appendChild(CardRepoLink);
         console.log(CardRepoLink.href)
-
+        
         //lägger till länk till webbsidan
         const CardPageLink = document.createElement('a');
         CardPageLink.href = obj.homepage
         CardPageLink.classList.add('card-page_link')
-        CardPageLink.textContent = '';
         card.appendChild(CardPageLink);
         console.log(CardPageLink.href)
+        
+        //Lägger till backgrundsbild taget från github repo
+        card.style.backgroundImage = `url('https://raw.githubusercontent.com/${obj.owner.login}/${obj.name}/main/screen.png')`;
+
+        
+        
+        
+        
         
         // console.log(obj.name)
         // console.log(obj.description)
