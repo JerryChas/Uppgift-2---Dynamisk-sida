@@ -1,6 +1,15 @@
 //hämta element (hämtas redan i modal.js)
 // const cardContainer = document.querySelector('.card-container');
 
+//*FUNKTIONER
+
+function createAndAppendElement(parentElement,HTMLelement,property,content,className) {
+  const element = document.createElement(HTMLelement);
+  element.classList.add(className);
+  element[property] = content;
+  parentElement.appendChild(element);
+}
+
 // Visa laddningsmeddelande
 cardContainer.innerHTML = '<h2>Laddar projekt...</h2>';
 
@@ -17,54 +26,56 @@ async function getRepos() {
 
     // Ta bort laddningsmeddelandet
     cardContainer.innerHTML = '';
-    
+
     //loopar datan från json
     jsonData.forEach(function (obj) {
       //* GENERERAR KORT
+
+      //Tar endast utvalda repository som i detta fall har topic: "show"
       if (obj.topics == 'show') {
         //skapar kort
         const card = document.createElement('div');
         card.classList.add('card');
         cardContainer.appendChild(card);
-        
+
         //Lägger till en rubrik i kortet
-        const cardHeadline = document.createElement('h3');
-        cardHeadline.classList.add('card-headline');
-        cardHeadline.textContent = obj.name;
-        card.appendChild(cardHeadline);
+        createAndAppendElement(
+          card,
+          'h3',
+          'textContent',
+          obj.name,
+          'card-headline'
+        );
 
         //lägger till en info-text i kortet
-        const cardTextInfo = document.createElement('p');
-        cardTextInfo.classList.add('card-text-info');
-        cardTextInfo.textContent = obj.description;
-        card.appendChild(cardTextInfo);
-        
+        createAndAppendElement(
+          card,
+          'p',
+          'textContent',
+          obj.description,
+          'card-text-info'
+        );
+
         //lägger till länk till repo
-        const CardRepoLink = document.createElement('a');
-        CardRepoLink.href = obj.html_url
-        CardRepoLink.classList.add('card-repo_link')
-        card.appendChild(CardRepoLink);
-        console.log(CardRepoLink.href)
-        
+        createAndAppendElement(
+          card,
+          'a',
+          'href',
+          obj.html_url,
+          'card-repo_link'
+        );
+
         //lägger till länk till webbsidan
-        const CardPageLink = document.createElement('a');
-        CardPageLink.href = obj.homepage
-        CardPageLink.classList.add('card-page_link')
-        card.appendChild(CardPageLink);
-        console.log(CardPageLink.href)
-        
+        createAndAppendElement(
+          card,
+          'a',
+          'href',
+          obj.homepage,
+          'card-page_link'
+        );
+
         //Lägger till backgrundsbild taget från github repo
         card.style.backgroundImage = `url('https://raw.githubusercontent.com/${obj.owner.login}/${obj.name}/main/screen.png')`;
-
-        
-        
-        
-        
-        
-        // console.log(obj.name)
-        // console.log(obj.description)
-        // console.log(obj.homepage)
-        // console.log(obj.html_url)
       }
     });
   } else {
