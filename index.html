@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
+
   <!-- Fonts från googlefonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -82,6 +84,22 @@
     <!-- Project section -->
     <section class=" project-section">
       <h2>Projekt</h2>
+
+      <!-- MODAL ---källa: https://codepen.io/codejockie/pen/NBwjyd  -->
+      <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <!-- ändrar från h1 till h3 -->
+            <h3 class="modal-headline">Projektnamn!</h3>
+            <!-- lägger till en p-tagg som ska innehålla projektbeskrivning -->
+            <p class="modal-text-info">Här beskrivs projektet</p>
+            <div class="modal-link_container">
+              <a target="_blank" href="#" id="modal-repo_link" class="modal_link">Github Repo</a>
+              <a target="_blank" href="#" id="modal-page_link" class="modal_link">Github Page</a>
+            </div>
+        </div>
+     </div>
+
       <!-- Project cards -->
       <div class="card-container" id="latest-project_container">
         <!-- Cards -->
@@ -116,6 +134,7 @@
 
 
 <script src="./js/main.js"></script>
+<script src="./js/modal.js"></script>
 <script src="./js/githubRepo.js"></script>
 </body>
 
