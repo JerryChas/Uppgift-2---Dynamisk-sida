@@ -1,6 +1,9 @@
 //hämta element (hämtas redan i modal.js)
 // const cardContainer = document.querySelector('.card-container');
 
+// Visa laddningsmeddelande
+cardContainer.innerHTML = '<h2>Laddar projekt...</h2>';
+
 //Hämtar JSON
 async function getRepos() {
   const repoResponse = await fetch(
@@ -11,6 +14,9 @@ async function getRepos() {
   if (repoResponse.ok) {
     const jsonData = await repoResponse.json();
     console.log(jsonData);
+
+    // Ta bort laddningsmeddelandet
+    cardContainer.innerHTML = '';
     
     //loopar datan från json
     jsonData.forEach(function (obj) {
