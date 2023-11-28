@@ -102,6 +102,8 @@ body {
     justify-content: center;
     flex-flow: row wrap;
 
+    border-bottom: 3px solid var(--font-color);
+    box-shadow: 3px 3px 10px var(--font-color);
     padding-top: 1rem;
     min-width: 100vw;
     min-height: 100vh;
