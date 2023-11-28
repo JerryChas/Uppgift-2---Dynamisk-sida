@@ -21,8 +21,8 @@ a {
     --secondary-color-dark: rgb(205, 161, 101);
 
     /* 10%  */
-    --accent-color-light: rgb(124, 199, 239);
-    --accent-color-dark: rgb(98, 189, 239);
+    --accent-color-light: rgb(253, 253, 253);
+    --accent-color-dark: rgb(191, 191, 191);
 
     --font-color: #111010;
 
@@ -47,7 +47,7 @@ body {
 .dark-mode {
     /* 60%  */
     --primary-color-light: #000000;
-    --primary-color-dark: rgb(25, 46, 46);
+    --primary-color-dark: rgb(50, 90, 90);
     
     /* 30%  */
     --secondary-color-light: #0b1524;
@@ -98,16 +98,17 @@ body {
 
 /* Profile section */
 .profile-section {
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-flow: row wrap;
 
     padding-top: 1rem;
+    min-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
     background-color: var(--secondary-color-light);
     
-    
+    position: relative;
 }
 
 .profile-picture {
@@ -122,9 +123,9 @@ body {
     flex-direction: column;
     /* gap: 0.3rem; */
     padding: 0.5rem;
-    right: 5%;
-    bottom: 10%;
-    position: absolute;
+    place-items: center;
+    bottom: 17%;
+    position: relative;
     color: #fff;
 
 }
@@ -144,11 +145,11 @@ body {
     align-self: flex-end;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: var(--secondary-color-dark);
+    background-color: var(--primary-color-dark);
     color: var(--font-color);
-    border: 1px solid var(--accent-color-dark);
+    border: 1px solid black;
     border-radius: 10px 30px;
-    margin-top: 0.5rem;
+    margin: 0.5em 4em;
 }
 
 
@@ -326,6 +327,7 @@ body {
         transition: 300ms;
 
         &:hover {
+            border-color: var(--accent-color-dark);
             box-shadow: 0 0 10px 2px var(--accent-color-dark);
             /* border-color: var(--secondary-color-dark); */
             color: #fff;
