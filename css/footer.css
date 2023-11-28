@@ -3,6 +3,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: grey;
+    color: #000000;
     
     /* border-top: 1px solid #636363; */
     
