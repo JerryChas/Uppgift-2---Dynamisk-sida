@@ -1,5 +1,6 @@
 /* HEADER */
 header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,15 +33,11 @@ header {
 }
 
 /* DARK MODE SWITCH */
-/* .dark-mode-switch {
+.dark-mode-switch {
+    position: absolute;
+    right: 5em;
     
-    position: relative;
-    &::before {
-        
-        content: '☀️';
-        
-    }
-} */
+}
 .dark-mode-switch input {
     display: none;
 }
@@ -170,6 +167,10 @@ header {
         background-color: var(--secondary-color-light);
         
         
+    }
+    .dark-mode-switch {
+        top: .5em;
+        right: 2em;
     }
 
     .hamb {
