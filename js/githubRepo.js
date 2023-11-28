@@ -41,7 +41,7 @@ async function getRepos() {
         //Lägger till en rubrik i kortet
         createAndAppendElement(
           card,
-          'h3',
+          'h2',
           'textContent',
           obj.name,
           'card-headline'
