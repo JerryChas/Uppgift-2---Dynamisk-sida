@@ -186,7 +186,10 @@ header {
         
         
     }
+    /* DARK MODE SWITCH */
+
     .dark-mode-switch {
+        transform: rotate(0deg);
         top: .5em;
         right: 2em;
     }
