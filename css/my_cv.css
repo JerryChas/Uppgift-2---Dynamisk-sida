@@ -2,7 +2,9 @@
 .cv-content {
     
     margin: 0 1em;
-
+    border-left: .3em groove var(--accent-color-dark);
+    border-radius: 100px 0;
+    padding-left: 1em;
     & h2 {
         text-align: center;
         position: relative;
@@ -13,7 +15,7 @@
             top: 50%;
             border: 5px ridge var(--accent-color-dark);
             border-radius: 50%;
-            width: 15%; /* Anpassa bredden efter dina behov */
+            width: 20%; /* Anpassa bredden efter dina behov */
         }
         &::before {
             left: 0;
@@ -35,7 +37,7 @@
         
     }
     & p {
-        border-left: .3em groove var(--accent-color-dark);
+        
     }
     
 }
