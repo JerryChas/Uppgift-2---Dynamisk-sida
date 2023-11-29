@@ -1,142 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jerry Olsson - Startsida</title>
+    <meta name="description" content="Startsidan på min webbplats" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/modal.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jerry Olsson - Startsida</title>
-  <meta name="description" content="Startsidan på min webbplats">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/modal.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
-  <!-- Fonts från googlefonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" defer>
+    <!-- Fonts från googlefonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" defer>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin defer>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" defer> -->
-  
-  <!-- ikoner från fontawesome -->
-  <script src="https://kit.fontawesome.com/d684801003.js" crossorigin="anonymous" defer></script>
-</head>
 
-<!-- BODY -->
-<body>
+    <!-- ikoner från fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/d684801003.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
 
-  <!-- HEADER -->
-  <header>
-    <a class="logo" href="index.html">
-      Jerry Olsson
-    </a>
-    
-    <!-- Dold h1 på idex.html, enbart för SEO -->
-    <h1 class="hidden-h1">Jerry Olsson</h1>
-    
-    <!-- Dark mode switch -->
-    <label class="dark-mode-switch">
-      <input type="checkbox" id="dark-mode-toggle">
-      <span class="slider">
-        <span class="slider-dot"></span>
-      </span>
-    </label>
-    
-    <!-- Hamburger icon -->
-    <input class="side-nav" type="checkbox" id="side-nav">
-    <label for="side-nav" class="hamb">
-      <i class="hamb-icon fa-solid fa-bars"></i>
-      <i class="close-icon fa-solid fa-xmark"></i>
-    </label>
+  <!-- BODY -->
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a class="logo" href="index.html"> Jerry Olsson </a>
 
-    <!-- NAV -->
-    <nav class="navbar">
-      <ul class="nav-list">
-        <li class="active-page nav-list-item"><a class="nav-link" href="index.html">Hem</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="my_cv.html">Mitt CV</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="about_me.html">Om mig</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
+      <!-- Dold h1 på idex.html, enbart för SEO -->
+      <h1 class="hidden-h1">Jerry Olsson</h1>
 
+      <!-- Dark mode switch -->
+      <label class="dark-mode-switch">
+        <input type="checkbox" id="dark-mode-toggle" />
+        <span class="slider">
+          <span class="slider-dot"></span>
+        </span>
+      </label>
 
-  <!-- MAIN -->
-  <main class="main-section">
+      <!-- Hamburger icon -->
+      <input class="side-nav" type="checkbox" id="side-nav" />
+      <label for="side-nav" class="hamb">
+        <i class="hamb-icon fa-solid fa-bars"></i>
+        <i class="close-icon fa-solid fa-xmark"></i>
+      </label>
 
-    <!-- Profile section -->
-    <section class=" profile-section">
+      <!-- NAV -->
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="active-page nav-list-item">
+            <a class="nav-link" href="index.html">Hem</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="my_cv.html">Mitt CV</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="about_me.html">Om mig</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="contact.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-     <div class="profile-section_div">
-        <!-- Profile picture -->
-        <div class="profile-picture_div">
-          <img class="profile-picture" src="img/Profile.jpg" alt="profilbild på mig">
+    <!-- MAIN -->
+    <main class="main-section">
+      <!-- Profile section -->
+      <section class="profile-section">
+        <div class="profile-section_div">
+          <!-- Profile picture -->
+          <div class="profile-picture_div">
+            <img
+              class="profile-picture"
+              src="img/Profile.jpg"
+              alt="profilbild på mig"
+            />
+          </div>
+
+          <!-- Profile info -->
+          <article class="profile-info">
+            <h2>Make, student och far</h2>
+            <p>...som är väldigt snäll och rar</p>
+            <a href="my_cv.html">Läs mitt CV</a>
+          </article>
         </div>
-  
-        <!-- Profile info -->
-        <article class="profile-info">
-          <h2>Make, student och far </h2>
-          <p>...som är väldigt snäll och rar </p>
-          <a href="my_cv.html">Läs mitt CV</a>
-        </article>
-     </div>
+      </section>
 
-    </section>
+      <!-- Project section -->
+      <section class="project-section">
+        <h2>Projekt</h2>
 
-    <!-- Project section -->
-    <section class=" project-section">
-      <h2>Projekt</h2>
-
-      <!-- MODAL ---källa: https://codepen.io/codejockie/pen/NBwjyd  -->
-      <div class="modal">
-        <div class="modal-content">
+        <!-- MODAL ---källa: https://codepen.io/codejockie/pen/NBwjyd  -->
+        <div class="modal">
+          <div class="modal-content">
             <span class="close-button">&times;</span>
             <!-- ändrar från h1 till h3 -->
             <h3 class="modal-headline">Projektnamn!</h3>
             <!-- lägger till en p-tagg som ska innehålla projektbeskrivning -->
             <p class="modal-text-info">Här beskrivs projektet</p>
             <div class="modal-link_container">
-              <a target="_blank" href="#" id="modal-repo_link" class="modal_link">Github Repo</a>
-              <a target="_blank" href="#" id="modal-page_link" class="modal_link">Github Page</a>
+              <a
+                target="_blank"
+                href="#"
+                id="modal-repo_link"
+                class="modal_link"
+                >Github Repo</a
+              >
+              <a
+                target="_blank"
+                href="#"
+                id="modal-page_link"
+                class="modal_link"
+                >Github Page</a
+              >
             </div>
+          </div>
         </div>
-     </div>
 
-      <!-- Project cards -->
-      <div class="card-container" id="latest-project_container">
-        <!-- Cards -->
+        <!-- Project cards -->
+        <div class="card-container" id="latest-project_container">
+          <!-- Cards -->
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="follow-me">
+          <p class="follow-me-text">
+            <b>FÖLJ MIG</b>
+          </p>
+          <ul class="follow-me-icon-list">
+            <!-- iconlänkar till olika sociala media-platformar -->
+            <li>
+              <a
+                href="https://www.facebook.com/JerRoy"
+                target="_blank"
+                aria-label="visit my facebook page"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/jerryroyohlson/"
+                target="_blank"
+                aria-label="visit my instagram page"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jerry-olsson-0b1a4228b/"
+                target="_blank"
+                aria-label="visit my linkedin page"
+              >
+                <i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/jerrychas/"
+                target="_blank"
+                aria-label="visit my github page"
+              >
+                <i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div class="follow-me">
-        <p class="follow-me-text">
-          <b>FÖLJ MIG</b>
-        </p>
-        <ul class="follow-me-icon-list"> <!-- iconlänkar till olika sociala media-platformar -->
-          <li><a href="https://www.facebook.com/JerRoy" target="_blank" aria-label="visit my facebook page"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/jerryroyohlson/" target="_blank" aria-label="visit my instagram page"><i
-                class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/jerry-olsson-0b1a4228b/" target="_blank" aria-label="visit my linkedin page">
-              <i class="fa-brands fa-linkedin-in"></i></a></li>
-          <li><a href="https://github.com/jerrychas/" target="_blank" aria-label="visit my github page">
-              <i class="fa-brands fa-github"></i></a></li>
-        </ul>
+      <div class="copyright-info">
+        <p>&copy;2023 Jerry Olsson</p>
       </div>
-    </div>
+    </footer>
 
-    <div class="copyright-info">
-      <p>&copy;2023 Jerry Olsson</p>
-    </div>
-  </footer>
-
-
-<script src="./js/main.js"></script>
-<script src="./js/modal.js"></script>
-<script src="./js/githubRepo.js"></script>
-</body>
-
+    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/githubRepo.js"></script>
+  </body>
 </html>
