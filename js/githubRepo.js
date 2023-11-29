@@ -1,9 +1,11 @@
-//hämta element (hämtas redan i modal.js)
-// const cardContainer = document.querySelector('.card-container');
-
 //*FUNKTIONER
-
-function createAndAppendElement(parentElement,HTMLelement,property,content,className) {
+function createAndAppendElement(
+  parentElement,
+  HTMLelement,
+  property,
+  content,
+  className
+) {
   const element = document.createElement(HTMLelement);
   element.classList.add(className);
   element[property] = content;
@@ -22,7 +24,6 @@ async function getRepos() {
   //Kontrollera att responsen är OK
   if (repoResponse.ok) {
     const jsonData = await repoResponse.json();
-    console.log(jsonData);
 
     // Ta bort laddningsmeddelandet
     cardContainer.innerHTML = '';
