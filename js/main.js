@@ -37,3 +37,26 @@ document.addEventListener('DOMContentLoaded',function(){
     darkModeToggle.addEventListener('change', toggleDarkMode);
 
 });    
+
+
+//SERVERCACHNING
+
+  function fetchDataFromCache(cachedElementID) {
+    // Kontakta servern för att hämta cachade resultat om möjligt
+    
+    // Uppdatera sidan med den cachade datan
+    const cachedElement = document.getElementById(cachedElementID);
+    console.log('Fetching data from server cache');
+    if (cachedElement) {
+      // Gör något med den cachade datan om det behövs
+      console.log('Updating page with cached data');
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // Använd servercachning om möjligt
+    fetchDataFromCache('cached-map');
+  });
+
+
