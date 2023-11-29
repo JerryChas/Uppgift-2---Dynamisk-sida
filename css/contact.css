@@ -17,13 +17,17 @@
 .map {
     background-color: var(--primary-color-light);
     align-self: center;
-    max-width: 90vw;
-    max-height: 90vw;
+    max-width: 80vw;
+    max-height: 80vw;
     overflow:hidden ;
     margin: 1rem;
     /* border: 1px solid black; */
     box-shadow: 2px 2px 12px ;
     border-radius: 10px;
+
+    & img {
+        width: 100%;
+    }
 }
 
 @media (min-width: 800px) {
