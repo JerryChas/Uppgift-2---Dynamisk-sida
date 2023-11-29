@@ -185,21 +185,6 @@ body {
     text-shadow: 1px 1px 3px black;
   }
 }
-.card:hover {
-  box-shadow: 3px 3px 5px 1px rgb(138, 138, 138);
-  transform: scale(1.05);
-  justify-content: space-around;
-  background-blend-mode: darken;
-
-  color: #fff;
-
-  & p {
-    visibility: inherit;
-  }
-  & h2 {
-    display: none;
-  }
-}
 
 .card-text-info {
   text-align: center;
@@ -291,6 +276,22 @@ body {
       /* border-color: var(--secondary-color-dark); */
       color: #fff;
       transform: scale(1.1);
+    }
+  }
+
+  .card:hover {
+    box-shadow: 3px 3px 5px 1px rgb(138, 138, 138);
+    transform: scale(1.05);
+    justify-content: space-around;
+    background-blend-mode: darken;
+  
+    color: #fff;
+  
+    & p {
+      visibility: inherit;
+    }
+    & h2 {
+      display: none;
     }
   }
 }
