@@ -1,19 +1,45 @@
 
+.cv-content {
+    
+    margin: 0 1em;
 
-.cv-content ul {
-    
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-    padding-bottom: 0.5rem;
+    & h2 {
+        text-align: center;
+        position: relative;
+        margin-top: 2em;
+        &::before, &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            border: 5px ridge var(--accent-color-dark);
+            border-radius: 50%;
+            width: 15%; /* Anpassa bredden efter dina behov */
+        }
+        &::before {
+            left: 0;
+        }   
+        &::after {
+            right: 0;
+        }
+    }
+    & h3 {
+        margin: .5em 0;
+    }
+    & h4 {
+        
+        margin-left: 1em;
+        margin-left: 1em;
+    }
+    & h5 {
+       margin-left: 1.5em;
+        
+    }
+    & p {
+        border-left: .3em groove var(--accent-color-dark);
+    }
     
 }
 
-.cv-content li{
-
-    margin: 0 0.9rem;
-}
 
 @media (min-width: 800px) {
     
