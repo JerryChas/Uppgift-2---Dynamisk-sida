@@ -68,7 +68,7 @@ Jag har även skapat ett interaktivt script som möjliggör Dark Mode. Detta scr
 
 ## Workshop JS Code Jam
 
-I [portfolion](portfolio.html) kan du hitta projekt som **gissa talet** eller **sten, sax, påse**, från Workshop JS code Jam som vi hade under en vecka i kursen Webbutveckling och Webbteknik
+I [portfolion](https://jerrychas.github.io/Uppgift-2---Dynamisk-sida/portfolio.html) kan du hitta projekt som **gissa talet** eller **sten, sax, påse**, från Workshop JS code Jam som vi hade under en vecka i kursen Webbutveckling och Webbteknik
 
 ## Bidrag
 
