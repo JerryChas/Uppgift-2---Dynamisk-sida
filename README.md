@@ -1,46 +1,6 @@
-<style>
-    .header {
-        text-align: center;
-        position: relative;
-    }
-
-    .header h1 {
-        border-bottom: none;
-        padding: 0;
-        font-size: 2.5em;
-        text-shadow: 0px 0px 5px  #72eadc;
-        transition: text-shadow 2000ms linear;
-        animation: shadow-puls 2s infinite alternate;
-    }
-
-    .header h4 {
-        position: absolute;
-        top: -20px;
-    }
-
-    @keyframes shadow-puls {
-        0% {
-            text-shadow: 0px 0px 5px #72eadc;
-            transform: scale(.99);
-        }
-        100% {
-            text-shadow: 0px 0px 30px #72eadc;
-            transform: scale(1);
-        }
-    }
-</style>
-
-
-<!----------------------------------------------->
-
-<div class='header'>
-
 # Uppgift 2 - Dynamisk sida
 
 #### **Skapad av:** _Jerry Olsson_
-
-</div>
-
 
 
 Besök den publicerade sidan [här](https://jerrychas.github.io/Uppgift-2---Dynamisk-sida/).
